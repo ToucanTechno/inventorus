@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Hebrew Fonts: */
+@font-face {
+    font-family: "Alef";
+    src: local("Alef"), url('./assets/fonts/he/Alef/Alef-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Bellefair";
+    src: local("Bellefair"), url('./assets/fonts/he/Bellefair/Bellefair-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: local("Rubik"), url('./assets/fonts/he/Rubik/Rubik-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "VarelaRound";
+    src: local("VarelaRound"), url('./assets/fonts/he/VarelaRound/VarelaRound-Regular.ttf') format("truetype");
+}
+
+/* English Fonts: */
+@font-face {
+    font-family: "ArchitectsDaughter";
+    src: local("ArchitectsDaughter"), url('./assets/fonts/en/ArchitectsDaughter/ArchitectsDaughter-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: local("BebasNeue"), url('./assets/fonts/en/BebasNeue/BebasNeue-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Courgette";
+    src: local("Courgette"), url('./assets/fonts/en/Courgette/Courgette-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "DancingScript";
+    src: local("DancingScript"), url('./assets/fonts/en/DancingScript/DancingScript-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "IndieFlower";
+    src: local("IndieFlower"), url('./assets/fonts/en/IndieFlower/IndieFlower-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: local("Lobster"), url('./assets/fonts/en/Lobster/Lobster-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Monoton";
+    src: local("Monoton"), url('./assets/fonts/en/Monoton/Monoton-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway"), url('./assets/fonts/en/Raleway/Raleway-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "SourceCodePro";
+    src: local("SourceCodePro"), url('./assets/fonts/en/SourceCodePro/SourceCodePro-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "Ultra";
+    src: local("Ultra"), url('./assets/fonts/en/Ultra/Ultra-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "YuseiMagic";
+    src: local("YuseiMagic"), url('./assets/fonts/en/YuseiMagic/YuseiMagic-Regular.ttf') format("truetype");
+}

@@ -1,0 +1,31 @@
+.grid-button {
+  background-size: cover;
+  background-position: center;
+}
+
+.grid-button h1 {
+    font-size: 5rem;
+    opacity: 1;
+    font-family: 'IndieFlower';
+    font-weight: 700;
+}
+mat-grid-list a {
+    color: black;
+}
+
+#buy-button {
+    background-image: url("../../assets/images/Making-your-wish-list_30op.png");
+}
+
+#rooms-button {
+  background-image: url("../../assets/images/basement-storage_30op.png");
+}
+
+#wishlist-button {
+    background-image: url("../../assets/images/home-buying-wishlist_30op.png");
+    background-position: bottom;
+}
+
+#tasks-button {
+    background-image: url("../../assets/images/dart_30op.png");
+}
