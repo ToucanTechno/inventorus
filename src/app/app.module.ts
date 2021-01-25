@@ -10,6 +10,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatRippleModule } from '@angular/material/core'
+import { MatSidenavModule } from '@angular/material/sidenav'
 
 import { RoomsComponent } from './rooms/rooms.component';
 import { TasksComponent } from './tasks/tasks.component';
@@ -37,6 +38,7 @@ import { HomeComponent } from './home/home.component';
     MatIconModule,
     MatBadgeModule,
     MatRippleModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
