@@ -1,14 +1,4 @@
 <div id="container">
-  <mat-toolbar color="primary">
-    <div style="width: 85%; margin: 0 auto;">
-      <mat-icon (click)="onClickMenu()">{{ menuIcon }}</mat-icon>
-      <span class="logo-text">
-        InvenTor<span style="font-size: 2rem">&nbsp;</span>us
-      </span>
-      <mat-icon matBadge="15" matBadgeColor="warn" style="float: right;">
-        notifications_active
-      </mat-icon>
-    </div>
-  </mat-toolbar>
+  <app-header></app-header>
   <router-outlet></router-outlet>
 </div>

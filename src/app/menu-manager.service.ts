@@ -5,23 +5,29 @@ import { EventEmitter, Injectable } from "@angular/core";
 })
 export class MenuManagerService {
     isMenuOpened: boolean;
-    menuOpened: EventEmitter<boolean>;
     isMenuActive: boolean;
-    shouldSubscribe: boolean;
+    menuChanged: EventEmitter<void>;
 
     constructor() {
-        this.isMenuOpened = true;
-        this.menuOpened = new EventEmitter<boolean>();
         this.isMenuActive = false;
+        this.isMenuOpened = false;
+        this.menuChanged = new EventEmitter<void>();
+        /* TODO: debug */
+        console.log("MenuManager Service constructor finished");
     }
 
     toggleMenu() {
         if (this.isMenuActive) {
             this.isMenuOpened = !this.isMenuOpened;
-            this.menuOpened.emit(this.isMenuOpened);
+            this.menuChanged.emit();
+
+            /* TODO: debug */
+            if (this.isMenuOpened) {
+                console.log("Menu is opened")
+            } else {
+                console.log("Menu is closed")
+            }
             return this.isMenuOpened;
-        } else {
-            return false;
         }
     }
 
@@ -31,5 +37,17 @@ export class MenuManagerService {
         } else {
             return "menu";
         }
+    }
+
+    activateMenu() {
+        this.isMenuActive = true;
+        this.isMenuOpened = true;
+        this.menuChanged.emit();
+    }
+
+    deactivateMenu() {
+        this.isMenuActive = false;
+        this.isMenuOpened = false;
+        this.menuChanged.emit();
     }
 }

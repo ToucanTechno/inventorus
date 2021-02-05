@@ -18,6 +18,7 @@ import { ItemsListComponent } from './items-list/items-list.component';
 import { StockComponent } from './stock/stock.component';
 import { WishListComponent } from './wish-list/wish-list.component';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HomeComponent } from './home/home.component';
     ItemsListComponent,
     StockComponent,
     WishListComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
